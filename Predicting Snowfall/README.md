@@ -4,5 +4,9 @@ Website: https://www.mtu.edu/alumni/favorites/snowfall/
 
 The available data set has snowfall each of 8 winter months (October through May) in inches, each year since 1890. It contains each year in a row, and each month in a column.
 
-## qw
-### as 
+## 1. Data reading, management. Graphing the major trends.
+For the weather data set, looking at the snowfall across months of the year. Helping residents better understand the the snowfall patterns in Houghton, both within a year and historically
+
+![Ice Cover](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/Ice_cover.PNG)
+![Ice by month](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/Ice_by_month.PNG)
+### 
