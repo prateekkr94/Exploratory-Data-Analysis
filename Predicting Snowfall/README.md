@@ -9,9 +9,11 @@ For the weather data set, looking at the snowfall across months of the year. Hel
 
 ![Ice Cover](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/Ice_cover.PNG)
 ![Ice by month](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/Ice_by_month.PNG)
+### A straight matplot is sort of hard to grasp
 ![Snow each month](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/Snow_each_month.PNG)
 ![Snow1](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/Snow1.PNG)
 ![Snow2](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/Snow2.PNG)
+### How might a transform work?
 ![Snow Trans](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/Snow_trans.PNG)
+### Let's look at the stacked line plot it can be done using cumsum function
 ![Cum snow](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/Cumulative_snow.PNG)
-### 
