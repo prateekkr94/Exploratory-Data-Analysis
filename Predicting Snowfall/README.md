@@ -84,14 +84,12 @@ Maybe we can gain a little by using the information we have.  We will continue t
 Looks like there are normal periodic devations
 ![npd](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/npd.PNG)
 
-Noise is pretty flat.
-![noise](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/noise.PNG)
-
 The master prediction with three reliable predictors
 ![anova1](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/anova1.PNG)
 ![anova2](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/anova2.PNG)
 
 Finally the prediction of 2019 Snowfall
+
 ![2019](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/2019.PNG)
 
 The R-square value is found to be 0.8167, hence the model is nearly accurate.
