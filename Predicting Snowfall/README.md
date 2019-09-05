@@ -49,3 +49,44 @@ The data look like It looks like the distribution of peak snowfall has shifted l
 ![highmonth](https://github.com/prateekkr94/Exploratory-Data-Analysis/blob/master/Predicting%20Snowfall/Snaps/highmonth.PNG)
 
 ### Prediction: March Snowfall
+Can we predict snowfall in March based on current year's snowfall? To do this, let's create a regression model that attempts to predict March snowfall based on a combination of linear predictors of OCT,NOV,DEC,JAN, and FEB (the months that precede March). Because of these differences between early and late eras, we know we probably shouldn't use the oldest data, so let's make one model for the entire data set, and a second model for just the modern era.
+
+Now, after creating the model and looking at the summary() we see that overall model is interesting, but not very encouraging. The reliability of the parameters seems to improve as we get closer to March, and February is the only one that is reliable. It would be good to get rid of some of these other predictors to give us more stable estimates.
+![mar_snow]()
+
+Let's do that for a model that uses only the late-era data and compare them all with ANOVA table. Each model provides a fit no worse than the model one parameter bigger. as a check, I also compared the smallest model with the biggest, which showed that there is no reliable difference between these two models.
+So can we place confidence regions around our prediction? The predict function will report two kinds of confidence regions for us and the results disagree substantially, and neither seems very appropriate. This is an area of research where there is no consensus.
+
+### Predictions based on el nino and sunspots records
+The only thing we can do to improve the model is to add more predictors. Monthly records of the the South Pacific El Nino/La Nina oscillation activity go back to the 1880s. Also, monthly records of sunspot counts go back hundreds of years. Maybe knowing about these predictors will be helpful?
+![cor]()
+
+Comparison of snowfall, sunspots, and el nino activity across years
+![compare_3]()
+
+It would be nice to fit the annual trend as a polynomial, to hopefully factor the mean level out.
+![sum_model]()
+
+R-squared is .52 with just year-polynomial. Now, trying different models.
+
+![model2a]()
+R-squared is almost same as the above model.
+
+![model2b]()
+R-squared improves to 0.573, but is it fair? So I calculated the correlation and it came out to be 0.529 so, not really an improvement.
+
+Let's look at the residuals, and we see that residuals are highly correlated with annual elnino, but not previous summer's.
+![resid]()
+
+Maybe we can gain a little by using the information we have.  We will continue to make two separate models.
+![com3ab]()
+
+Looks like there are normal periodic devations
+![npd]()
+
+Noise is pretty flat.
+![noise]()
+
+The master prediction with three reliable predictors
+![anova1]()
+![anova2]()
